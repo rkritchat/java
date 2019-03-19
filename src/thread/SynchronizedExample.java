@@ -46,12 +46,6 @@ public class SynchronizedExample {
         return e;
     }
 
-    private static void sleep(){
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e1) {e1.printStackTrace(); }
-    }
-
     private static class Calculator{
         private int summation;
 
@@ -63,14 +57,13 @@ public class SynchronizedExample {
             System.out.println("Result is : " + summation);
         }
 
-        public int getSummation() {
+        private int getSummation() {
             return summation;
         }
 
-        public void setSummation(int summation) {
+        private void setSummation(int summation) {
             this.summation = summation;
         }
     }
-
 }
 
