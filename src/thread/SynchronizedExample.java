@@ -8,9 +8,9 @@ import java.util.stream.IntStream;
  * Use for block thread
  */
 public class SynchronizedExample {
+
     private static final Calculator cal = new Calculator();
     private static final Calculator cal2 = new Calculator();
-
 
     public static void main(String... args) {
         List<Integer> dummy = IntStream.rangeClosed(1, 10).boxed().collect(Collectors.toList());
