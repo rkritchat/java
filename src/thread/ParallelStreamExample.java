@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static netscape.security.Privilege.add;
-
 public class ParallelStreamExample {
     public static void main(String... args) {
 
