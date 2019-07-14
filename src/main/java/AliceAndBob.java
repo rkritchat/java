@@ -20,7 +20,7 @@ public class AliceAndBob {
         System.out.println("Bob "+bob + " sum :" + bob.stream().mapToInt(e -> e).sum());
     }
 
-    public static void pickCoin(List<Integer> data, List<Integer> people) {
+    private static void pickCoin(List<Integer> data, List<Integer> people) {
         int size = data.size();
         if(size==0) return;
         int bestPosition = 0;
@@ -45,7 +45,7 @@ public class AliceAndBob {
         addCoin(data, people, bestPosition);
     }
 
-    public static void addCoin(List<Integer> data, List<Integer> people , int bestPosition) {
+    private static void addCoin(List<Integer> data, List<Integer> people , int bestPosition) {
         people.add(data.get(bestPosition));
         data.remove(bestPosition);
     }
